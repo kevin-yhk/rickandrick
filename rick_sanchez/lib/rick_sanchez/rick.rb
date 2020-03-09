@@ -26,12 +26,12 @@ class Rick
   def self.find_by_name(name)
         @@all.select {|rick|
             if rick.name == name
-            puts rick.status
-            puts rick.species
-            puts rick.origin 
-            puts rick.location 
-            puts rick.image 
-            puts rick.url
+            puts "Status = #{rick.status}"
+            puts "Species = #{rick.species}"
+            puts "Origin = #{rick.origin}" 
+            puts "Location = #{rick.location}" 
+            puts "Image = #{rick.image}" 
+            puts "API URL = #{rick.url}"
             end }
             
     end 

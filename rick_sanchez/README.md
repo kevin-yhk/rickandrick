@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+This is simple CLI application where it'll return a list of unique Rick's names and by selecting a Rick, you'll be able to see more information about that Rick. 
 
 ## Development
 

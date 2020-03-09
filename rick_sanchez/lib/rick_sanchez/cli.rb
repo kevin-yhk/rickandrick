@@ -4,14 +4,12 @@ require_relative "./rick.rb"
 class CLI 
 
     def self.call 
-        count = 0
-        if count == 0
-            API.get_ricks
-        end 
+        
+        API.get_ricks
+         
 
         user_input = ""
         while user_input != "exit" do
-        count = 1
         puts "Wubbalubbadubdub! There are 20 Rick's from different universes on the loose!"
         puts "To find out who these Rick's are, enter 'list names'."
         puts "To find a specific Rick's information (status, species, origin, location, image, url) enter the entire name!'"

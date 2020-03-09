@@ -24,7 +24,6 @@ class CLI
               end 
           when Rick.list_names.select do |rick|
                 if rick == input 
-                    #binding.pry
                 Rick.find_by_name(input)
                 end 
                 end 

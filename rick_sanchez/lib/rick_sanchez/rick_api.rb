@@ -8,6 +8,5 @@ class RickSanchez::API
 
         rickandrick_array.each {|rick|
         RickSanchez::Rick.new(rick[:name], rick[:status], rick[:species], rick[:origin][:name], rick[:location][:name], rick[:image], rick[:url])}
-        # binding.pry
     end 
 end 

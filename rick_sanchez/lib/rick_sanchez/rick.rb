@@ -1,4 +1,4 @@
-class Rick
+class RickSanchez::Rick
   attr_accessor :name, :status, :species, :origin, :location, :image, :url
 
   @@all = []

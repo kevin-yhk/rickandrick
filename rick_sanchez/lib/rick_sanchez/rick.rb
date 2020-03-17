@@ -24,15 +24,6 @@ class RickSanchez::Rick
   end 
 
   def self.find_by_name(name)
-        @@all.select {|rick|
-            if rick.name == name
-            puts "Status = #{rick.status}"
-            puts "Species = #{rick.species}"
-            puts "Origin = #{rick.origin}" 
-            puts "Location = #{rick.location}" 
-            puts "Image = #{rick.image}" 
-            puts "API URL = #{rick.url}"
-            end }
-            
-    end 
+        @@all.select {|rick| rick.name == name}
+  end 
 end

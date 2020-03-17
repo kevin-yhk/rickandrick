@@ -9,7 +9,6 @@ require_relative "./rick_sanchez/rick_api"
 
 module RickSanchez
     class Error < StandardError; end
-    # Your code goes here...
   end
 
 

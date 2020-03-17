@@ -35,11 +35,16 @@ class RickSanchez::CLI
               RickSanchez::Rick.list_names.each do |rick|
                 puts rick 
               end 
-          when RickSanchez::Rick.list_names.select do |rick|
-                if rick == input 
-                RickSanchez::Rick.find_by_name(input)
-                end 
-              end 
+          when RickSanchez::Rick.list_names.detect do |rick|
+               rick == input 
+               end 
+               rick = RickSanchez::Rick.find_by_name(input)
+                puts "Status = #{rick.status}"
+                puts "Species = #{rick.species}"
+                puts "Origin = #{rick.origin}" 
+                puts "Location = #{rick.location}" 
+                puts "Image = #{rick.image}" 
+                puts "API URL = #{rick.url}" 
           when "exit"
               puts "Goodbye moonman!"
             break
